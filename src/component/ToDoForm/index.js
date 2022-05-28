@@ -6,6 +6,7 @@ export default class ToDoForm extends Component {
 
             <div className='form-container'>
                 <h1>New Task</h1>
+                <button className='btn-signout' onClick={this.props.onLogout}>Sign out</button>
                 <div className='form-input'>
                     <div className='form-text'>
                         <label>Name</label>
