@@ -1,0 +1,7 @@
+ .not-found {
+     background-image: url(/public/404error.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+     height: 90vh;
+ }
