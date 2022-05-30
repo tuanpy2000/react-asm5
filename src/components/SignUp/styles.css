@@ -1,17 +1,21 @@
 .signup-container {
   max-width: 600px;
+  position: absolute;
+  top: 50%;
   background: rgba(0, 0, 0, 0.7);
   margin: auto;
-  height: 50vh;
+  height: 42vh;
   align-self: center;
   padding-top: 100px;
+  transform: translateY(-50%);
+  right: 0;
+  left: 0;
+
 }
 
 h1 {
   text-align: center;
 }
-
-
 
 form.form-signup {
   max-width: 500px;
