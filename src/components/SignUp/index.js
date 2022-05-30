@@ -16,7 +16,6 @@ export default function SignUp() {
             <Formik
                 initialValues={{ username: "", password: "" }}
                 onSubmit={(values, { setSubmitting }) => {
-                    console.log("Logging in", values);
                     setSubmitting(false);
                     setUser(user => {
                         const newUser = [...user, values]
@@ -24,6 +23,7 @@ export default function SignUp() {
                         localStorage.setItem('userdatas', jsonValue);
                         return newUser
                     })
+                    alert("signup success, you can signin now!");
                 }}
 
                 validationSchema={Yup.object().shape({
