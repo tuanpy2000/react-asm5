@@ -56,29 +56,26 @@ export default class Home extends Component {
 
     render() {
         return (
-            <div className="App">
-                <div className='container'>
-                    <ToDoForm
-                        taskName={this.handleNameChange}
-                        taskDeadline={this.handleDateChange}
-                        taskPriority={this.handlePriorityChange}
-                        onSubmit={this.onSubmit}
-                        onLogout={this.onLogout}
-                    />
-                    <div>
-                        <h1>List task</h1>
-                        {this.state.items.map(item => {
-                            return (
-                                <ToDoList
-                                    data={item}
-                                    deleteItem={this.deleteItem}
-                                />
-                            )
-                        })}
-                    </div>
+            <div className='container'>
+                <ToDoForm
+                    taskName={this.handleNameChange}
+                    taskDeadline={this.handleDateChange}
+                    taskPriority={this.handlePriorityChange}
+                    onSubmit={this.onSubmit}
+                    onLogout={this.onLogout}
+                />
+                <div>
+                    <h1>List task</h1>
+                    {this.state.items.map(item => {
+                        return (
+                            <ToDoList
+                                data={item}
+                                deleteItem={this.deleteItem}
+                            />
+                        )
+                    })}
                 </div>
             </div>
-
         );
     }
 }

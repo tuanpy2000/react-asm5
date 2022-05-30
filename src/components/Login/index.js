@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
+// import SignUp from '../SignUp';
 
 import './Login.css';
 
@@ -46,6 +47,9 @@ export default function Login() {
                 </label>
                 <div className='button'>
                     <button type="submit" onClick={login}>Submit</button>
+                </div>
+                <div>
+                    <a onClick={() => navigate('/signup')}>Create new account</a>
                 </div>
             </form>
         </div>
